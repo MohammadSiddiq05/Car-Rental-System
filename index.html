@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Car Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-car"></i> Premium Car Rentals</h1>
+      <nav>
+        <ul>
+          <li><a href="#cars"><i class="fa-solid fa-car-side"></i> Our Fleet</a></li>
+          <li><a href="#booking"><i class="fa-solid fa-calendar-check"></i> Book Now</a></li>
+          <li><a href="#about"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Luxury & Performance Vehicles</h2>
+        <p>Experience the thrill of driving premium cars at competitive rates</p>
+        <a href="#booking" class="btn-1">Reserve Your Ride</a>
+      </div>
+    </section>
+
+    <!-- Car Listing -->
+    <section id="cars" class="car-list">
+      <h2><i class="fa-solid fa-car"></i> Our Fleet</h2>
+
+      <div class="car-grid">
+        <div class="car" data-price="5000">
+          <img src="/Images/corolla.png" alt="Toyota Corolla">
+          <div class="car-details">
+            <h3>Toyota Corolla</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 5,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>(128)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="6000">
+          <img src="/Images/civic.png" alt="Honda Civic">
+          <div class="car-details">
+            <h3>Honda Civic</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 6,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(95)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="4000">
+          <img src="/Images/wagon.png" alt="Suzuki Wagon R">
+          <div class="car-details">
+            <h3>Suzuki Wagon R</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 4,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(76)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="3000">
+          <img src="/Images/lambo.png" alt="Lamborghini Huracan">
+          <div class="car-details">
+            <h3>Lamborghini Huracan</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 2 Seats</span>
+            </div>
+            <p class="price">PKR 30,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span>(42)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="7000">
+          <img src="/Images/meredes.png" alt="Mercedes-Benz C-Class">
+          <div class="car-details">
+            <h3>Mercedes-Benz C-Class</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 7,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(88)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="8000">
+          <img src="/Images/audi-a5.png" alt="Audi A4">
+          <div class="car-details">
+            <h3>Audi A4</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 8,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(64)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="9000">
+          <img src="/Images/porsche.png" alt="Porsche 911">
+          <div class="car-details">
+            <h3>Porsche 911</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 2 Seats</span>
+            </div>
+            <p class="price">PKR 9,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <span>(53)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car" data-price="12000">
+          <img src="/Images/macleren.png" alt="McLaren 720S">
+          <div class="car-details">
+            <h3>McLaren 720S</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 2 Seats</span>
+            </div>
+            <p class="price">PKR 12,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(29)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="car" data-price="15000">
+          <img src="/Images/bmw.png" alt="BMW M5 Competition">
+          <div class="car-details">
+            <h3>BMW M5 Competition</h3>
+            <div class="car-specs">
+              <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+              <span><i class="fa-solid fa-gears"></i> Automatic</span>
+              <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+            </div>
+            <p class="price">PKR 15,000 <span>/day</span></p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(42)</span>
+            </div>
+            <div class="availability">
+              <span class="status available" id="car-availability"><i class="fas fa-check-circle"></i>
+                Available</span>
+              <a href="#booking" class="btn-2 rent-btn">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking-form">
+      <h2><i class="fa-solid fa-calendar-day"></i> Book Your Car</h2>
+      <form id="rentalForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="car"><i class="fa-solid fa-car"></i> Select Car</label>
+            <select id="car" name="car" required>
+              <option value="">--Select--</option>
+              <option value="Toyota Corolla">Toyota Corolla</option>
+              <option value="Honda Civic">Honda Civic</option>
+              <option value="Suzuki Wagon R">Suzuki Wagon R</option>
+              <option value="Lamborghini Huracan">Lamborghini Huracan</option>
+              <option value="Mercedes-Benz C-Class">Mercedes-Benz C-Class</option>
+              <option value="Audi A4">Audi A4</option>
+              <option value="Porsche 911">Porsche 911</option>
+              <option value="McLaren 720S">McLaren 720S</option>
+              <option value="BMW M5 Competition">BMW M5 Competition</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="start"><i class="fa-solid fa-calendar-day"></i> Start Date</label>
+            <input type="date" id="start" name="start" required />
+          </div>
+
+          <div class="form-group">
+            <label for="end"><i class="fa-solid fa-calendar-day"></i>End Date</label>
+            <input type="date" id="end" name="end" required />
+          </div>
+
+
+          <div class="form-actions">
+            <button type="submit" class="btn-1">
+              <i class="fa-solid fa-circle-check"></i> Confirm Booking
+            </button>
+          </div>
+      </form>
+      <div id="booking-summary"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <h2><i class="fa-solid fa-circle-info"></i> About Premium Car Rentals</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Founded in 2010, Premium Car Rentals has established itself as a leader in luxury vehicle rentals across
+            Pakistan. Our mission is to provide exceptional service and premium vehicles to discerning clients.</p>
+          <p>With a fleet of over 50 vehicles and locations in 4 major cities, we're committed to making your rental
+            experience seamless and memorable.</p>
+          <ul class="features-list">
+            <li> <i class="fa-solid fa-circle-check"></i> 24/7 Customer Support</li>
+            <li> <i class="fa-solid fa-circle-check"></i> Free Delivery in Major Cities</li>
+            <li> <i class="fa-solid fa-circle-check"></i>Comprehensive Insurance Options</li>
+            <li> <i class="fa-solid fa-circle-check"></i>Regular Vehicle Maintenance</li>
+            <li> <i class="fa-solid fa-circle-check"></i> Flexible Rental Periods</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8" alt="Our Showroom">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2><i class="fa-solid fa-location-dot"></i> Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fa-solid fa-location-dot"></i> 123 Premium Plaza, Main Boulevard, Karachi</p>
+          <p><i class="fa-solid fa-phone"></i> (021) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i>info@premiumrentals.com</p>
+          <p><i class="fa-solid fa-clock"></i> Open 24/7</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="contactname" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contactemail" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contactsubject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" id="contactmessage" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-1">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-summary"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Premium Car Rentals</h3>
+          <p>Your trusted partner for luxury and performance vehicle rentals across Pakistan.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#cars">Our Fleet</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Locations</h3>
+          <ul>
+            <li>Karachi</li>
+            <li>Lahore</li>
+            <li>Islamabad</li>
+            <li>Rawalpindi</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" id="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Premium Car Rentals. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
